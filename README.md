@@ -12,3 +12,14 @@
 * You can reset the temperature to 20 with a reset function
 * You can ask about the thermostat's current energy usage: < 18 is `low-usage`, < 25 is `medium-usage`, anything else is `high-usage`.
 * (In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
+
+## USER STORIES
+--------
+### USER STORY 1: STARTING TEMPERATURE
+As a user
+So I am the right temperature
+The thermostat is set at 20 degrees
+
+Object | Message
+------ | -------
+thermostat | temperature
