@@ -32,6 +32,14 @@ I want to increase the temperature
 Object | Message
 -------| -------
 thermostat | temperature
-   -   | increase
+   -   | up
 
+### USER STORY 3: DECREASING TEMPERATURE
+As a user
+So I can get cooler
+I want to decrease the temperature
 
+Object | Message
+-------| -------
+thermostat | temperature
+   -   | down
