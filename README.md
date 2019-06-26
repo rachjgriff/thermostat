@@ -53,3 +53,12 @@ Object | Message
 -------| -------
 thermostat | temperature
    -   | minimumTemp
+
+### USER STORY 5: POWER SAVING MODE - ON BY DEFAULT
+As a user
+So I can save power
+I want Power Saving Mode to be set as default
+
+Object | Message
+-------| -------
+thermostat | powerSaverMode
