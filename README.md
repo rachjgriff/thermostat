@@ -70,5 +70,13 @@ I want to be able to turn Power Saving Mode off
 
 Object | Message
 -------| -------
-thermostat | switchPowerSavingModeOff 
+thermostat | switchPowerSavingModeOff
 
+### USER STORY 7: POWER SAVING MODE - ON
+As a user
+So I can save power
+I want to turn Power Saving Mode back on
+
+Object | Message
+-------| -------
+thermostat | switchPowerSavingModeOn

@@ -17,7 +17,7 @@ describe('Thermostat', function() {
       };
       expect(thermostat.getCurrentTemperature()).toEqual(10);
     });
-  });  
+  });
 
   describe('adjust temperature', function() {
     it('increases the temperature', function () {
@@ -28,8 +28,8 @@ describe('Thermostat', function() {
     it('decreases the temperature', function () {
       thermostat.down();
       expect(thermostat.getCurrentTemperature()).toEqual(19);
-    }); 
-  });   
+    });
+  });
 
   describe('power saving mode', function() {
     it('power saving mode is on by default', function () {
@@ -40,6 +40,14 @@ describe('Thermostat', function() {
       thermostat.switchPowerSavingModeOff();
       expect(thermostat.isPowerSavingModeOn()).toBe(false);
     });
+
+    it('power saving mode can be switched on', function () {
+      thermostat.switchPowerSavingModeOff();
+      expect(thermostat.isPowerSavingModeOn()).toBe(false);
+
+      thermostat.switchPowerSavingModeOn();
+      expect(thermostat.isPowerSavingModeOn()).toBe(true);
+    });
   });
-  
+
 });
