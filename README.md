@@ -23,3 +23,15 @@ The thermostat is set at 20 degrees
 Object | Message
 ------ | -------
 thermostat | temperature
+
+### USER STORY 2: INCREASING TEMPERATURE
+As a user
+So I can get warmer
+I want to increase the temperature
+
+Object | Message
+-------| -------
+thermostat | temperature
+   -   | increase
+
+
