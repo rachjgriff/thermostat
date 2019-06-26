@@ -5,6 +5,7 @@ var Thermostat = function() {
   this.temperature = 20;
   this.powerSavingMode = true;
   this.MAX_TEMP_PSM_ON = 25;
+  this.MAX_TEMP_PSM_OFF = 32;
 };
 
 Thermostat.prototype.getCurrentTemperature = function() {
@@ -30,7 +31,10 @@ Thermostat.prototype.isMinimumTemperature = function() {
 };
 
 Thermostat.prototype.isMaximumTemperature = function() {
-  return this.temperature === this.MAX_TEMP_PSM_ON;
+  if (this.isPowerSavingModeOn()) {
+    return this.temperature === this.MAX_TEMP_PSM_ON;
+  };
+    return this.temperature == this.MAX_TEMP_PSM_OFF;
 };
 
 Thermostat.prototype.isPowerSavingModeOn = function() {

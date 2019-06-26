@@ -89,4 +89,14 @@ I want to have a max temperature of 25 degrees when power saving mode is on
 Object | Message
 -------| -------
 thermostat | switchPowerSavingModeOn
- -  | maximum_temperature
+ -  | MAX_TEMP_PSM_ON
+
+### USER STORY 9: POWER SAVING MODE - OFF (MAX TEMP)
+As a user
+So I waste energy on heating
+I want to have a max temperature of 32 degrees when power saving mode is off
+
+Object | Message
+-------| -------
+thermostat | switchPowerSavingModeOff
+ -  | MAX_TEMP_PSM_OFF
