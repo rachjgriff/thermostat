@@ -101,7 +101,7 @@ Object | Message
 thermostat | switchPowerSavingModeOff
  -  | MAX_TEMP_PSM_OFF
 
- ### USER STORY 10: RESET TEMPERATURE
+### USER STORY 10: RESET TEMPERATURE
 As a user
 So quickly change the temperature
 I want to be able to reset the temperature to 20 degrees
@@ -111,3 +111,14 @@ Object | Message
 thermostat | reset
  -  | temperature
 
+You can ask about the thermostat's current energy usage: < 18 is `low-usage`, < 25 is `medium-usage`, anything else is `high-usage`.
+
+### USER STORY 11: REPORTS ENERGY USAGE
+As a user
+So I can ask about my thermostat's current energy usage
+I want it to tell me whether it is 'low-usage', 'medium-usage' or 'high-usage'
+
+Object | Message
+-------| -------
+thermostat | energy_usage
+ -  | temperature
