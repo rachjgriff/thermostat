@@ -43,3 +43,13 @@ Object | Message
 -------| -------
 thermostat | temperature
    -   | down
+
+### USER STORY 4: MINIMUM TEMPERATURE
+As a user
+So I don't get too cold
+I want the minimum temperature to be 10 degrees
+
+Object | Message
+-------| -------
+thermostat | temperature
+   -   | minimumTemp
