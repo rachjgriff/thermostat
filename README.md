@@ -100,3 +100,14 @@ Object | Message
 -------| -------
 thermostat | switchPowerSavingModeOff
  -  | MAX_TEMP_PSM_OFF
+
+ ### USER STORY 10: RESET TEMPERATURE
+As a user
+So quickly change the temperature
+I want to be able to reset the temperature to 20 degrees
+
+Object | Message
+-------| -------
+thermostat | reset
+ -  | temperature
+

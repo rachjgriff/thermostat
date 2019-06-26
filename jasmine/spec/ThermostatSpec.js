@@ -29,6 +29,14 @@ describe('Thermostat', function() {
       thermostat.down();
       expect(thermostat.getCurrentTemperature()).toEqual(19);
     });
+
+    it('reset temperature', function() {
+      for(var i = 0; i < 6; i++) {
+        thermostat.down();
+      }
+      thermostat.resetTemperature();
+      expect(thermostat.getCurrentTemperature()).toEqual(20);
+    });
   });
 
   describe('power saving mode', function() {
