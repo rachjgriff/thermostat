@@ -80,3 +80,13 @@ I want to turn Power Saving Mode back on
 Object | Message
 -------| -------
 thermostat | switchPowerSavingModeOn
+
+### USER STORY 8: POWER SAVING MODE - ON (MAX TEMP)
+As a user
+So I don't waste energy on heating
+I want to have a max temperature of 25 degrees when power saving mode is on
+
+Object | Message
+-------| -------
+thermostat | switchPowerSavingModeOn
+ -  | maximum_temperature
