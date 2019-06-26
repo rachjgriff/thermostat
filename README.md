@@ -61,4 +61,14 @@ I want Power Saving Mode to be set as default
 
 Object | Message
 -------| -------
-thermostat | powerSaverMode
+thermostat | powerSaverModeOn
+
+### USER STORY 6: POWER SAVING MODE - OFF
+As a user
+So I can waste power
+I want to be able to turn Power Saving Mode off
+
+Object | Message
+-------| -------
+thermostat | switchPowerSavingModeOff 
+

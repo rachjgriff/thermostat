@@ -6,28 +6,40 @@ describe('Thermostat', function() {
      thermostat = new Thermostat();
   });
 
-  it('thermostat starts at 20 degrees', function() {
-    expect(thermostat.getCurrentTemperature()).toEqual(20);
-  });
+  describe('default thermostat settings', function() {
+    it('thermostat starts at 20 degrees', function () {
+      expect(thermostat.getCurrentTemperature()).toEqual(20);
+    });
 
-  it('increases the temperature', function() {
-    thermostat.up();
-    expect(thermostat.getCurrentTemperature()).toEqual(21);
-  });
+    it('has minimum temperature of 10 degrees', function () {
+      for (var i = 0; i < 15; i++) {
+        thermostat.down();
+      };
+      expect(thermostat.getCurrentTemperature()).toEqual(10);
+    });
+  });  
 
-  it('decreases the temperature', function() {
-    thermostat.down();
-    expect(thermostat.getCurrentTemperature()).toEqual(19);
-  });
+  describe('adjust temperature', function() {
+    it('increases the temperature', function () {
+      thermostat.up();
+      expect(thermostat.getCurrentTemperature()).toEqual(21);
+    });
 
-  it('has minimum temperature of 10 degrees', function() {
-    for(var i = 0; i < 15; i++) {
+    it('decreases the temperature', function () {
       thermostat.down();
-    };
-    expect(thermostat.getCurrentTemperature()).toEqual(10);
-  });
+      expect(thermostat.getCurrentTemperature()).toEqual(19);
+    }); 
+  });   
 
-  it('power saving mode is on by default', function() {
-    expect(thermostat.isPowerSavingModeOn()).toBe(true);
+  describe('power saving mode', function() {
+    it('power saving mode is on by default', function () {
+      expect(thermostat.isPowerSavingModeOn()).toBe(true);
+    });
+
+    it('power saving mode can be switched off', function () {
+      thermostat.switchPowerSavingModeOff();
+      expect(thermostat.isPowerSavingModeOn()).toBe(false);
+    });
   });
+  
 });
